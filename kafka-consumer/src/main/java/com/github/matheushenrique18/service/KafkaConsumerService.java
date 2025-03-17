@@ -6,5 +6,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 public interface KafkaConsumerService {
 
     public void receiveMessage(ConsumerRecord<?, Student> record);
+    public Student processMessage(ConsumerRecord<?, Student> record);
 
 }
